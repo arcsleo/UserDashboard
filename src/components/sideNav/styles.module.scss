@@ -1,0 +1,34 @@
+.sidenavmain{
+    background-color: rgba(40, 44, 49, 1);
+    height: 100vh;
+    width: 80px;
+    .sidenavlogo{
+        width: 100%;
+        svg{
+            width: 100%;
+        }
+    }
+    .sideicon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        cursor: pointer;
+        svg{
+            width: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidenavmain{
+        width: 100px;
+        min-height: 100vh;
+        .sideicon{
+            margin-bottom: 20px;
+            svg{
+                width: 30px;
+            }
+        }
+    }
+}

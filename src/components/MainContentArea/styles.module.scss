@@ -1,0 +1,159 @@
+.mainContentWrapper{
+  background-color: rgba(33, 36, 39, 1);  
+  width: calc( 100vw - 80px );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  .container{
+    max-width: 1250px;
+    display: flex;
+    width: 100%;
+    .mainContentHead{
+      display: flex;
+      width: 100%;
+      height: 50px;
+      align-items: center;
+      .mainContentHeadText{
+        font-family: Podkova;
+        font-size: 40px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .mainContentHeadArrow{
+        margin-left: 3%;
+        svg{
+          width: 20px;
+        }
+      }
+      .mainContentHeadSearchmain{
+        margin-left: 3%;
+        border: 1.5px solid #4c4c4c;
+        border-radius: 12px;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        svg{
+          width: 15px;
+          margin-right: 15px;
+        }
+        .mainContentHeadSearchinput{
+          background-color: transparent;
+          font-family: 'Poppins';
+          font-size: 17px;
+          font-weight: 300;
+          border: 0px;
+          outline: none;
+          color: #fff;
+        }
+      }
+      .mainContentHeadBell{
+        position: relative;
+        margin-left: 3%;
+        svg{
+          width: 30px;
+        }
+        .mainContentHeadNotification{
+          width: 15px;
+          height: 15px;
+          background: rgba(0, 135, 83, 1);
+          border-radius: 50%;
+          position: absolute;
+          top: -2px;
+          right: -2px;
+        }
+      }
+      .mainContentHeadAdmin{
+        display: flex;
+        align-items: center;
+        float: right;
+        width: 100%;
+        cursor: pointer;
+        justify-content: flex-end;
+        .mainContentHeadAdmin{
+          color: #fff;
+          font-size: 25px;
+          font-family: 'Poppins';
+          font-weight: 400;
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainContentWrapper{
+    .container{
+      .mainContentHead{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        .mainContentHeadText{
+          font-family: Podkova;
+          font-size: 20px;
+          font-weight: 400;
+          color: #fff;
+        }
+        .mainContentHeadArrow{
+          margin-left: 3%;
+          svg{
+            width: 5px;
+          }
+        }
+        .mainContentHeadSearchmain{
+          margin-left: 3%;
+          border: 1.5px solid #4c4c4c;
+          border-radius: 12px;
+          padding: 5px 15px;
+          display: flex;
+          align-items: center;
+          svg{
+            width: 10px;
+            margin-right: 15px;
+          }
+          .mainContentHeadSearchinput{
+            background-color: transparent;
+            font-family: 'Poppins';
+            font-size: 9px;
+            font-weight: 300;
+            border: 0px;
+            outline: none;
+            color: #fff;
+          }
+        }
+        .mainContentHeadBell{
+          position: relative;
+          margin-left: 3%;
+          svg{
+            width: 15px;
+          }
+          .mainContentHeadNotification{
+            width: 6px;
+            height: 6px;
+            background: #008753;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            right: 0px;
+          }
+        }
+        .mainContentHeadAdmin{
+          display: flex;
+          align-items: center;
+          float: right;
+          width: 100%;
+          justify-content: flex-end;
+          .mainContentHeadAdmin{
+            color: #fff;
+            font-size: 12.5px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+  }
+}
