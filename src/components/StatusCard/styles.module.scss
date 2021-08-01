@@ -1,0 +1,170 @@
+.statusCardMain{
+    width: 30%;
+    border: 1px solid rgba(77, 77, 77, 1);
+    background: rgba(40, 44, 49, 1);
+    border-radius: 14px;
+    padding: 20px;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    .statusCardTop{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .statusCardHead{
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 23px;
+            color: rgba(209, 209, 209, 1);
+            float: left;
+            width: 100%;
+        }
+        .statusCarddotsWrapper{
+            display: flex;
+            justify-content: flex-end;
+            svg{
+                width: 25px;
+            }
+        }
+    }
+    .statusCardBottom{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .statusCardBottomText{
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 40px;
+            color: rgba(209, 209, 209, 1);
+            float: left;
+            width: 50%;
+        }
+        .statusCardBottomCardProfitText{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 40px;
+            color: rgba(0, 135, 83, 1);
+            text-align: center;
+            width: 100%;
+        }
+        .statusCardBottomCardLostText{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 40px;
+            color: rgba(195, 61, 61, 0.85);
+            text-align: center;
+            width: 100%;
+        }
+        .statusCardBottomPercent{
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+            align-items: center;
+            .statusCardBottomhikepercenttext{
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 20px;
+                color: rgba(0, 135, 83, 1);
+                margin-right: 15px;
+            }
+            .statusCardBottomlosspercenttext{
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 20px;
+                color: rgba(195, 61, 61, 0.85);
+                margin-right: 15px;
+            }
+            svg{
+                width: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1145px) {
+    .statusCardMain{
+        height: 140px;
+        .statusCardTop{
+            .statusCardHead{
+                font-size: 18px;
+            }
+            .statusCarddotsWrapper{
+                svg{
+                    width: 15px;
+                }
+            }
+        }
+        .statusCardBottom{
+            margin-top: 10px;
+            .statusCardBottomText{
+                font-family: 'Poppins';
+                font-size: 30px;
+            }
+            .statusCardBottomCardProfitText{
+                font-size: 30px;
+            }
+            .statusCardBottomCardLostText{
+                font-size: 30px;
+            }
+            .statusCardBottomPercent{
+                .statusCardBottomhikepercenttext{
+                    font-size: 10px;
+                    margin-right: 10px;
+                }
+                .statusCardBottomlosspercenttext{
+                    font-size: 10px;
+                    margin-right: 10px;
+                }
+                svg{
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .statusCardMain{
+        min-height: 120px;
+        width: 60%;
+        .statusCardTop{
+            .statusCardHead{
+                font-size: 18px;
+            }
+            .statusCarddotsWrapper{
+                svg{
+                    width: 15px;
+                }
+            }
+        }
+        .statusCardBottom{
+            margin-top: 10px;
+            .statusCardBottomText{
+                font-family: 'Poppins';
+                font-size: 30px;
+            }
+            .statusCardBottomCardProfitText{
+                font-size: 30px;
+            }
+            .statusCardBottomCardLostText{
+                font-size: 30px;
+            }
+            .statusCardBottomPercent{
+                .statusCardBottomhikepercenttext{
+                    font-size: 15px;
+                    margin-right: 10px;
+                }
+                .statusCardBottomlosspercenttext{
+                    font-size: 15px;
+                    margin-right: 10px;
+                }
+                svg{
+                    width: 15px;
+                }
+            }
+        }
+    }
+}

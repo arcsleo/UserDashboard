@@ -1,14 +1,17 @@
 .mainContentWrapper{
   background-color: rgba(33, 36, 39, 1);  
   width: calc( 100vw - 80px );
+  margin-left: 80px;
   min-height: 100vh;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   padding: 30px;
   .container{
     max-width: 1250px;
-    display: flex;
+    // display: flex;
     width: 100%;
+    flex-wrap: wrap;
     .mainContentHead{
       display: flex;
       width: 100%;
@@ -72,12 +75,18 @@
         justify-content: flex-end;
         .mainContentHeadAdmin{
           color: #fff;
-          font-size: 25px;
+          font-size: 20px;
           font-family: 'Poppins';
           font-weight: 400;
           margin-right: 2%;
         }
       }
+    }
+    .StatusCardWrapper{
+      display: flex;
+      width: 100%;
+      margin-top: 35px;
+      column-gap: 5%;
     }
   }
 }
@@ -155,5 +164,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .StatusCardWrapper{
+    flex-wrap: wrap;
   }
 }
