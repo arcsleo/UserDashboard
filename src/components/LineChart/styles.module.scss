@@ -1,0 +1,43 @@
+.lineGraph{
+    width: 70%;
+    padding: 20px;
+    border: 1px solid rgba(77, 77, 77, 1);
+    border-radius: 14px;
+    background-color: rgba(40, 44, 49, 1);
+    margin-right: 5%;
+    .linegraphInner{
+        padding: 0% 15%;
+    }
+    .mainContentHeadAdmin{
+        display: flex;
+        align-items: center;
+        // float: right;
+        // width: 100%;
+        // justify-content: flex-end;
+        .mainContentHeadAdmin{
+          color: rgba(202, 202, 202, 1);
+          font-size: 12.5px;
+          font-family: 'Poppins';
+          font-weight: 400;
+          margin-right: 1%;
+        }
+        svg{
+            margin-right: 4%;
+            width: 10px;
+        }
+    }
+    .contentDownload{
+        display: flex;
+        justify-content: flex-end;
+        svg{
+            width: 25px;
+            margin-right: 1%;
+        }
+        .contentDownloadText{
+            color: rgba(202, 202, 202, 1);
+            font-size: 12.5px;
+            font-family: 'Poppins';
+            font-weight: 400;
+        }
+    }
+}

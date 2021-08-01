@@ -3,6 +3,8 @@ import styles from './styles.module.scss';
 import {ReactComponent as  Leftarrow} from '../../assets/svg/leftarrow.svg';
 import {ReactComponent as  Downarrow} from '../../assets/svg/downarrow.svg';
 import {ReactComponent as  Bell} from '../../assets/svg/bell.svg';
+import LineChartPage from '../LineChart';
+import PieChartPage from '../PieChart';
 import {ReactComponent as  Search} from '../../assets/svg/search.svg';
 import StatusCard from '../StatusCard';
 
@@ -36,6 +38,10 @@ const MainContentArea = () => {
                     <StatusCard Title="Registered Users" PL="Profit" Percent="0.7" Amount="7,320" IsmainCard={false} />
                     <StatusCard Title="Paid Users" PL="Loss" Percent="1.7" Amount="5,180" IsmainCard={false} />
                     <StatusCard Title="Monthly recurring rev." PL="Profit" Percent="1" Amount="$25,928" IsmainCard={true} />
+                </div>
+                <div className={styles.chartsFirstcover}>
+                    <LineChartPage />
+                    <PieChartPage />
                 </div>
             </div>
         </div>

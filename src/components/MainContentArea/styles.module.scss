@@ -85,8 +85,12 @@
     .StatusCardWrapper{
       display: flex;
       width: 100%;
-      margin-top: 35px;
+      margin-top: 20px;
       column-gap: 5%;
+    }
+    .chartsFirstcover{
+      width: 100%;
+      display: flex;
     }
   }
 }

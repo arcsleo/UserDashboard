@@ -3,8 +3,8 @@
     border: 1px solid rgba(77, 77, 77, 1);
     background: rgba(40, 44, 49, 1);
     border-radius: 14px;
-    padding: 20px;
-    height: 175px;
+    padding: 0px 20px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -33,11 +33,11 @@
         width: 100%;
         display: flex;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 10px;
         .statusCardBottomText{
             font-family: 'Poppins';
             font-weight: 400;
-            font-size: 40px;
+            font-size: 30px;
             color: rgba(209, 209, 209, 1);
             float: left;
             width: 50%;
@@ -45,7 +45,7 @@
         .statusCardBottomCardProfitText{
             font-family: 'Poppins';
             font-weight: 600;
-            font-size: 40px;
+            font-size: 30px;
             color: rgba(0, 135, 83, 1);
             text-align: center;
             width: 100%;
@@ -53,7 +53,7 @@
         .statusCardBottomCardLostText{
             font-family: 'Poppins';
             font-weight: 600;
-            font-size: 40px;
+            font-size: 30px;
             color: rgba(195, 61, 61, 0.85);
             text-align: center;
             width: 100%;
