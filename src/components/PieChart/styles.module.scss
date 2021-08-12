@@ -5,6 +5,7 @@
     border-radius: 14px;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Poppins';
     background-color: rgba(40, 44, 49, 1);
     .piechartcoverHead{
         font-family: 'Poppins';
@@ -13,10 +14,47 @@
         border: 0px;
         outline: none;
         color: rgba(202, 202, 202, 1);
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         width: 100%;
     }
     .piewrapper{
         width: 70%;
     }
+    .pointers{
+        display: flex;
+        width: 30%;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 50px;
+        .pointersgreen{
+            width: 15px;
+            height: 15px;
+            background: rgba(0, 135, 83, 0.68);
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .pointersText{
+            width: calc( 100% - 20px );
+            color: rgba(202, 202, 202, 1);
+            font-size: 13px;
+        }
+        .pointersorange{
+            width: 15px;
+            height: 15px;
+            background: rgba(198, 117, 43, 0.57);
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .piechartcover{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    
 }

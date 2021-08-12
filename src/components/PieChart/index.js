@@ -39,6 +39,12 @@ const PieChartPage = () => {
                     options={pieOptions}
                 />
             </div>
+            <div className={styles.pointers}>
+              <div className={styles.pointersgreen}></div>
+              <div className={styles.pointersText}>Paid</div>
+              <div className={styles.pointersorange}></div>
+              <div className={styles.pointersText}>Unpaid</div>
+            </div>
         </div>
     );
 

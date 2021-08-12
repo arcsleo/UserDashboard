@@ -41,9 +41,14 @@ const data = canvas => {
 };
 
 const options = {
-  legend: {
-    display: false,
-  },
+  plugins:{   
+    legend: {
+      display: false
+            },
+         },
+  tooltips: {
+    enabled: false
+ },
   elements: {
     arc: {
       borderWidth: 0
@@ -78,6 +83,7 @@ const LineChartPage = () => {
             <div className={styles.linegraphInner}>
                 <Line 
                     data={data}
+                    height="60px"
                     options={options}
                 />
             </div>

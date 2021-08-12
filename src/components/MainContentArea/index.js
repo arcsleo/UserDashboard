@@ -5,6 +5,7 @@ import {ReactComponent as  Downarrow} from '../../assets/svg/downarrow.svg';
 import {ReactComponent as  Bell} from '../../assets/svg/bell.svg';
 import LineChartPage from '../LineChart';
 import PieChartPage from '../PieChart';
+import BarChartPage from '../BarChart';
 import {ReactComponent as  Search} from '../../assets/svg/search.svg';
 import StatusCard from '../StatusCard';
 
@@ -42,6 +43,7 @@ const MainContentArea = () => {
                 <div className={styles.chartsFirstcover}>
                     <LineChartPage />
                     <PieChartPage />
+                    <BarChartPage />
                 </div>
             </div>
         </div>

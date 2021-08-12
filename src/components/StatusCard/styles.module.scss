@@ -1,5 +1,5 @@
 .statusCardMain{
-    width: 30%;
+    width: 33%;
     border: 1px solid rgba(77, 77, 77, 1);
     background: rgba(40, 44, 49, 1);
     border-radius: 14px;
@@ -166,5 +166,30 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .statusCardMain{
+        width: 100% !important;
+        height: 100px !important;
+        min-height: 100px !important;
+    }
+    .statusCardHead{
+        font-size: 15px !important;
+    }
+    .statusCardBottomCardProfitText{
+        font-size: 20px !important;
+    }
+    .statusCardBottomText{
+        font-size: 22px !important;
+    }
+    .statusCardBottomhikepercenttext{
+        font-size: 12px !important;
+        margin-right: 5px !important;
+    }
+    .statusCardBottomlosspercenttext{
+        font-size: 12px !important;
+        margin-right: 5px !important;
     }
 }

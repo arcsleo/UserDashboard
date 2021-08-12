@@ -86,11 +86,12 @@
       display: flex;
       width: 100%;
       margin-top: 20px;
-      column-gap: 5%;
+      column-gap: 1%;
     }
     .chartsFirstcover{
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
     }
   }
 }
@@ -174,5 +175,14 @@
 @media only screen and (max-width: 780px) {
   .StatusCardWrapper{
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mainContentWrapper{
+    margin-left: 0px;
+    width: 100vw;
+  }
+  .chartsFirstcover{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
