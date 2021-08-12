@@ -15,7 +15,7 @@ const data = [
 
 const options = {
   colors: ["#c6752b", "#008753"],
-  legend:{position:'none'}
+  legend: {position:'none'},
 };
 
 const BarChartPage = () => {
