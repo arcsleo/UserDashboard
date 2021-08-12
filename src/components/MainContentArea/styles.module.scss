@@ -82,6 +82,9 @@
           margin-right: 2%;
         }
       }
+      .hamBurger{
+        display: none;
+      }
     }
     .StatusCardWrapper{
       display: flex;
@@ -174,6 +177,23 @@
 }
 
 @media only screen and (max-width: 780px) {
+  .mainContentWrapper{
+    padding: 0px !important;
+  }
+  .mainContentHead{
+    padding: 40px 30px !important;
+    // border-bottom: 1px solid grey;
+    position: fixed;
+    z-index: 2;
+    background-color: #212427;
+  }
+  .chartsFirstcover{
+    padding: 0px 30px !important;
+  }
+  .StatusCardWrapper{
+    padding: 0px 30px !important;
+    margin-top: 85px !important;
+  }
   .StatusCardWrapper{
     flex-wrap: wrap;
     justify-content: center;
@@ -186,11 +206,20 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .hamBurger{
+    display:  block !important;
+    svg{
+      fill: #fff;
+      width: 50px;
+      height: 40px;
+      margin-left: 10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 460px) {
   .mainContentHeadText{
-    font-size: 12px !important;
+    font-size: 20px !important;
   }
   .mainContentHeadArrow{
     display: flex;
@@ -222,14 +251,14 @@
     height: 4px !important;
     top: 9px !important;
   }
-  .mainContentHeadAdmin {
-    color: #fff;
-    font-size: 8.5px !important;
-  }
-  .mainContentHeadAdmin{
-    svg{
-      width: 10px;
-      margin-left: 5px;
-    }
-  }
+  // .mainContentHeadAdmin {
+  //   color: #fff;
+  //   font-size: 8.5px !important;
+  // }
+  // .mainContentHeadAdmin{
+  //   svg{
+  //     width: 10px;
+  //     margin-left: 5px;
+  //   }
+  // }
 }

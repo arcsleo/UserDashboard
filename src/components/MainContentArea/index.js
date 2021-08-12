@@ -3,13 +3,15 @@ import styles from './styles.module.scss';
 import {ReactComponent as  Leftarrow} from '../../assets/svg/leftarrow.svg';
 import {ReactComponent as  Downarrow} from '../../assets/svg/downarrow.svg';
 import {ReactComponent as  Bell} from '../../assets/svg/bell.svg';
+import ViewHeadlineIcon from '@material-ui/icons/ViewHeadline';
 import LineChartPage from '../LineChart';
 import PieChartPage from '../PieChart';
 import BarChartPage from '../BarChart';
+import StatusBarPage from '../StatusBar';
 import {ReactComponent as  Search} from '../../assets/svg/search.svg';
 import StatusCard from '../StatusCard';
 
-const MainContentArea = () => {
+const MainContentArea = (props) => {
     return(
         <div className={styles.mainContentWrapper}>
             <div className={styles.container}>
@@ -34,6 +36,9 @@ const MainContentArea = () => {
                         </div>
                         <Downarrow />
                     </div>
+                    <div className={styles.hamBurger} onClick={()=>props.callBack()}>
+                        <ViewHeadlineIcon />
+                    </div>
                 </div>
                 <div className={styles.StatusCardWrapper}>
                     <StatusCard Title="Registered Users" PL="Profit" Percent="0.7" Amount="7,320" IsmainCard={false} />
@@ -44,6 +49,7 @@ const MainContentArea = () => {
                     <LineChartPage />
                     <PieChartPage />
                     <BarChartPage />
+                    <StatusBarPage />
                 </div>
             </div>
         </div>

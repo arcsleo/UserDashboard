@@ -6,12 +6,16 @@ import {ReactComponent as  Personal} from '../../assets/svg/personal.svg';
 import {ReactComponent as  Gallery} from '../../assets/svg/gallery.svg';
 import {ReactComponent as  Settings} from '../../assets/svg/settings.svg';
 import {ReactComponent as  Stripe} from '../../assets/svg/stripe.svg';
+import CloseIcon from '@material-ui/icons/Close';
 
-const SideNav = () => {
+const SideNav = (props) => {
     return(
-        <div className={styles.sidenavmain}>
+        <div className={ props.isMobile ? props.itemShow ? `${styles.sidenavmain} ${styles.sideScroll}` : `${styles.sidenavmain}` : styles.sidenavmain }>
             <div className={styles.sidenavlogo}>
                 <Pvdata />
+            </div>
+            <div className={styles.closeButton}  onClick={()=>props.callBack()}>
+                <CloseIcon />
             </div>
             <div className={styles.sideicon}>
                 <Home />

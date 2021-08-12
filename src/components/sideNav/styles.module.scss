@@ -9,6 +9,9 @@
             width: 100%;
         }
     }
+    .closeButton{
+        display: none;
+    }
     .sideicon{
         width: 100%;
         display: flex;
@@ -24,13 +27,36 @@
 @media only screen and (max-width: 768px) {
     .sidenavmain{
         width: 0px;
+        background: #212427;
         overflow: hidden;
         min-height: 100vh;
+        z-index: 3;
+        right: 0px;
+        transition: width 1s;
+        .sidenavlogo{
+            display: none !important;
+        }
+        .closeButton{
+            display: flex !important;
+            width: 100%;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            svg{
+                width: 45px;
+                height: 45px;
+                fill: #fff;
+            }
+        }
         .sideicon{
             margin-bottom: 20px;
             svg{
                 width: 30px;
             }
         }
+    }
+    .sideScroll{
+        width: 80px !important;
     }
 }
