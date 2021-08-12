@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   padding: 30px;
+  min-width: 400px;
   .container{
     max-width: 1250px;
     // display: flex;
@@ -184,5 +185,51 @@
   .chartsFirstcover{
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .mainContentHeadText{
+    font-size: 12px !important;
+  }
+  .mainContentHeadArrow{
+    display: flex;
+    align-items: center;
+    svg{
+      width: 3px !important;
+    }
+  }
+  .mainContentHeadSearchmain{
+    width: 100% !important;
+  }
+  .mainContentHeadSearchinput{
+    width: 100% !important;
+  }
+  .mainContentHeadBell{
+    svg{
+      width: 10px !important;
+    }
+  }
+  .mainContentHeadSearchmain{
+    height: 20px !important;
+    padding: 5px 5px !important;
+    svg{
+      margin-right: 0px !important;
+    }
+  }
+  .mainContentHeadNotification {
+    width: 4px !important;
+    height: 4px !important;
+    top: 9px !important;
+  }
+  .mainContentHeadAdmin {
+    color: #fff;
+    font-size: 8.5px !important;
+  }
+  .mainContentHeadAdmin{
+    svg{
+      width: 10px;
+      margin-left: 5px;
+    }
   }
 }
